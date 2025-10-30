@@ -70,11 +70,32 @@
             color: white;
             text-decoration: none;
             transition: opacity 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
         .contact-link:hover {
             opacity: 0.8;
             text-decoration: underline;
+        }
+
+        .whatsapp-logo {
+            font-weight: bold;
+            background: #25D366;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
+        }
+
+        .map-logo {
+            font-weight: bold;
+            background: #FF6B6B;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
         }
 
         .section {
@@ -222,13 +243,21 @@
                 <h1 class="name">MUHAMMAD FAISAL</h1>
                 <div class="title">Web3 Financial Architect | Crypto Trading Specialist | Islamic Finance Researcher</div>
                 <div class="contact-info">
-                    <div class="contact-item">📱 +92 322 7269110</div>
+                    <div class="contact-item">
+                        <a href="https://wa.me/923227269110" class="contact-link" target="_blank">
+                            <span class="whatsapp-logo">WhatsApp</span> +92 322 7269110
+                        </a>
+                    </div>
                     <div class="contact-item">
                         <a href="mailto:muhammad.faisal.advisor@outlook.com" class="contact-link">
                             ✉️ muhammad.faisal.advisor@outlook.com
                         </a>
                     </div>
-                    <div class="contact-item">📍 Sahiwal, Pakistan</div>
+                    <div class="contact-item">
+                        <a href="https://www.google.com/maps/place/Sahiwal,+Punjab,+Pakistan" class="contact-link" target="_blank">
+                            <span class="map-logo">Map</span> Sahiwal, Punjab, Pakistan
+                        </a>
+                    </div>
                     <div class="contact-item">
                         <a href="https://beacons.ai/muhammad.faisal.advisor" class="contact-link" target="_blank">
                             🌐 https://beacons.ai/muhammad.faisal.advisor
