@@ -59,6 +59,19 @@
             gap: 0.5rem;
         }
         
+        .contact-link {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-link:hover {
+            color: #667eea;
+        }
+        
         .section {
             padding: 2rem;
             border-bottom: 1px solid #eee;
@@ -135,10 +148,14 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
         .btn:hover {
             background: #5a6fd8;
+            transform: translateY(-2px);
         }
         
         .education-item {
@@ -158,6 +175,15 @@
             min-width: 150px;
         }
         
+        .clickable-emoji {
+            font-size: 1.2em;
+            transition: transform 0.2s;
+        }
+        
+        .clickable-emoji:hover {
+            transform: scale(1.2);
+        }
+        
         @media (max-width: 768px) {
             .container {
                 margin: 0;
@@ -175,6 +201,10 @@
                 flex-direction: column;
                 align-items: center;
             }
+            
+            .contact-link {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -184,10 +214,35 @@
             <div class="name">👑 MUHAMMAD FAISAL 🏆</div>
             <div class="title">Islamic Scholar-Orator | Global Ethical Leader | Web3 Financial Architect</div>
             <div class="contact-info">
-                <div class="contact-item">📞 +92 322 7269110</div>
-                <div class="contact-item">📧 muhammad.faisal.advisor@outlook.com</div>
-                <div class="contact-item">📍 Sahiwal, Punjab, Pakistan</div>
-                <div class="contact-item">🌍 Global Mobility Available</div>
+                <div class="contact-item">
+                    <a href="https://wa.me/923227269110?text=Hello%20Muhammad%20Faisal,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect" 
+                       class="contact-link" target="_blank">
+                        <span class="clickable-emoji">📞</span> +92 322 7269110
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:muhammad.faisal.advisor@outlook.com?subject=Contact%20from%20Portfolio&body=Hello%20Muhammad%20Faisal,"
+                       class="contact-link" target="_blank">
+                        <span class="clickable-emoji">📧</span> muhammad.faisal.advisor@outlook.com
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.google.com/maps/place/Sahiwal,+Punjab,+Pakistan/@30.6609,73.1061,13z/data=!3m1!4b1!4m6!3m5!1s0x392b0d46e397df1b:0x045ddf7487a3c7e1!8m2!3d30.6676!4d73.1066!16zL20vMDN0b2c0?entry=ttu"
+                       class="contact-link" target="_blank">
+                        <span class="clickable-emoji">📍</span> Sahiwal, Punjab, Pakistan
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://beacons.ai/muhammad.faisal.advisor" 
+                       class="contact-link" target="_blank">
+                        <span class="clickable-emoji">🌐</span> Portfolio: beacons.ai/muhammad.faisal.advisor
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-link">
+                        <span class="clickable-emoji">🌍</span> Global Mobility Available
+                    </span>
+                </div>
             </div>
         </header>
 
@@ -252,8 +307,12 @@
                     <li>Sharia-compliant trading strategies</li>
                 </ul>
                 <div class="links">
-                    <a href="https://www.tradingview.com/pricing/?share_your_love=muhammad_faisal_advisor" class="btn">TradingView Pro</a>
-                    <a href="https://www.mexc.com/register?inviteCode=2chfv" class="btn">MEXC Global</a>
+                    <a href="https://www.tradingview.com/pricing/?share_your_love=muhammad_faisal_advisor" class="btn" target="_blank">
+                        <span class="clickable-emoji">📊</span> TradingView Pro
+                    </a>
+                    <a href="https://www.mexc.com/register?inviteCode=2chfv" class="btn" target="_blank">
+                        <span class="clickable-emoji">💹</span> MEXC Global
+                    </a>
                 </div>
             </div>
 
@@ -266,8 +325,12 @@
                     <li>Ethical passive income streams</li>
                 </ul>
                 <div class="links">
-                    <a href="https://www.zazzle.com/store/hussaini_artist" class="btn">Zazzle Store</a>
-                    <a href="https://www.spreadshirt.com/shop/user/hussaini+digital+artist" class="btn">Spreadshirt Store</a>
+                    <a href="https://www.zazzle.com/store/hussaini_artist" class="btn" target="_blank">
+                        <span class="clickable-emoji">🎨</span> Zazzle Store
+                    </a>
+                    <a href="https://www.spreadshirt.com/shop/user/hussaini+digital+artist" class="btn" target="_blank">
+                        <span class="clickable-emoji">👕</span> Spreadshirt Store
+                    </a>
                 </div>
             </div>
         </section>
@@ -303,11 +366,83 @@
         <section class="section">
             <h2 class="section-title">📲 Connect</h2>
             <div class="links">
-                <a href="tel:+923227269110" class="btn">📞 Call</a>
-                <a href="mailto:muhammad.faisal.advisor@outlook.com" class="btn">📧 Email</a>
-                <a href="https://beacons.ai/muhammad.faisal.advisor" class="btn">🌐 Portfolio</a>
+                <a href="https://wa.me/923227269110?text=Hello%20Muhammad%20Faisal,%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect" 
+                   class="btn" target="_blank">
+                    <span class="clickable-emoji">📞</span> WhatsApp
+                </a>
+                <a href="mailto:muhammad.faisal.advisor@outlook.com?subject=Contact%20from%20Portfolio&body=Hello%20Muhammad%20Faisal,"
+                   class="btn" target="_blank">
+                    <span class="clickable-emoji">📧</span> Email
+                </a>
+                <a href="https://beacons.ai/muhammad.faisal.advisor" 
+                   class="btn" target="_blank">
+                    <span class="clickable-emoji">🌐</span> Portfolio
+                </a>
+                <a href="https://www.google.com/maps/place/Sahiwal,+Punjab,+Pakistan/@30.6609,73.1061,13z/data=!3m1!4b1!4m6!3m5!1s0x392b0d46e397df1b:0x045ddf7487a3c7e1!8m2!3d30.6676!4d73.1066!16zL20vMDN0b2c0?entry=ttu"
+                   class="btn" target="_blank">
+                    <span class="clickable-emoji">📍</span> Location
+                </a>
             </div>
         </section>
     </div>
+
+    <script>
+        // Add hover effects and smooth interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickableEmojis = document.querySelectorAll('.clickable-emoji');
+            
+            clickableEmojis.forEach(emoji => {
+                emoji.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.3)';
+                });
+                
+                emoji.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+            
+            // Add click animation
+            const buttons = document.querySelectorAll('.btn, .contact-link');
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    // Add ripple effect
+                    const ripple = document.createElement('span');
+                    const rect = this.getBoundingClientRect();
+                    const size = Math.max(rect.width, rect.height);
+                    const x = e.clientX - rect.left - size / 2;
+                    const y = e.clientY - rect.top - size / 2;
+                    
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.6);
+                        transform: scale(0);
+                        animation: ripple 0.6s linear;
+                        width: ${size}px;
+                        height: ${size}px;
+                        left: ${x}px;
+                        top: ${y}px;
+                    `;
+                    
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+    </script>
+    
+    <style>
+        @keyframes ripple {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+    </style>
 </body>
 </html>
