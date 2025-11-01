@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MUHAMMAD FAISAL - Web3 Financial Architect</title>
+    <title>Muhammad Faisal - Islamic Scholar & Web3 Architect</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -18,214 +18,157 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
         }
-
+        
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 20px;
-        }
-
-        .cv-wrapper {
             background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            overflow: hidden;
-            margin: 40px auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
         }
-
+        
         .header {
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            background: linear-gradient(135deg, #2c3e50, #34495e);
             color: white;
-            padding: 40px;
+            padding: 2rem;
             text-align: center;
         }
-
+        
         .name {
-            font-size: 2.5em;
-            font-weight: 700;
-            margin-bottom: 10px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
         }
-
+        
         .title {
-            font-size: 1.4em;
+            font-size: 1.3rem;
             opacity: 0.9;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
         }
-
+        
         .contact-info {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 1rem;
+            margin-top: 1rem;
         }
-
+        
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 0.5rem;
         }
-
-        .contact-link {
-            color: white;
-            text-decoration: none;
-            transition: opacity 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .contact-link:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-
-        .whatsapp-logo {
-            font-weight: bold;
-            background: #25D366;
-            color: white;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.8em;
-        }
-
-        .map-logo {
-            font-weight: bold;
-            background: #FF6B6B;
-            color: white;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.8em;
-        }
-
+        
         .section {
-            padding: 30px 40px;
+            padding: 2rem;
             border-bottom: 1px solid #eee;
         }
-
-        .section:last-child {
-            border-bottom: none;
-        }
-
+        
         .section-title {
             color: #2c3e50;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #3498db;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            border-left: 4px solid #667eea;
+            padding-left: 1rem;
         }
-
-        .competencies-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        .competency-category h3 {
-            color: #3498db;
-            margin-bottom: 10px;
-        }
-
-        .competency-list {
-            list-style: none;
-        }
-
-        .competency-list li {
-            padding: 5px 0;
-            border-bottom: 1px dashed #ecf0f1;
-        }
-
-        .experience-item {
-            margin-bottom: 25px;
-        }
-
-        .job-title {
-            font-weight: 600;
-            color: #2c3e50;
-            font-size: 1.1em;
-        }
-
-        .company {
-            color: #3498db;
-            font-style: italic;
-        }
-
-        .duration {
-            color: #7f8c8d;
-            font-size: 0.9em;
-        }
-
-        .achievements {
-            list-style: none;
-            margin-top: 10px;
-        }
-
-        .achievements li {
-            padding: 8px 0;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .achievements li:before {
-            content: "▸";
-            color: #3498db;
-            position: absolute;
-            left: 0;
-        }
-
-        .store-links {
+        
+        .profile-quote {
             background: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 10px;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            font-style: italic;
+            border-left: 4px solid #28a745;
         }
-
-        .store-link {
-            color: #3498db;
-            text-decoration: none;
-            display: block;
-            padding: 5px 0;
-        }
-
-        .store-link:hover {
-            text-decoration: underline;
-        }
-
-        .skills-grid {
+        
+        .expertise-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            gap: 1.5rem;
+            margin-top: 1rem;
         }
-
-        .skill-category h3 {
-            color: #3498db;
-            margin-bottom: 10px;
+        
+        .expertise-category {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
         }
-
+        
+        .expertise-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .experience-item {
+            margin-bottom: 2rem;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+        
+        .experience-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .experience-date {
+            color: #666;
+        }
+        
+        .links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        
+        .btn {
+            padding: 0.5rem 1rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #5a6fd8;
+        }
+        
+        .education-item {
+            margin-bottom: 1rem;
+        }
+        
         .languages {
             display: flex;
-            gap: 30px;
+            gap: 2rem;
             flex-wrap: wrap;
         }
-
+        
         .language-item {
             background: #f8f9fa;
-            padding: 10px 20px;
-            border-radius: 20px;
-            border-left: 4px solid #3498db;
+            padding: 1rem;
+            border-radius: 5px;
+            min-width: 150px;
         }
-
+        
         @media (max-width: 768px) {
+            .container {
+                margin: 0;
+            }
+            
             .header {
-                padding: 30px 20px;
+                padding: 1.5rem;
             }
             
             .name {
-                font-size: 2em;
-            }
-            
-            .section {
-                padding: 20px;
+                font-size: 2rem;
             }
             
             .contact-info {
@@ -237,196 +180,134 @@
 </head>
 <body>
     <div class="container">
-        <div class="cv-wrapper">
-            <!-- Header Section -->
-            <header class="header">
-                <h1 class="name">MUHAMMAD FAISAL</h1>
-                <div class="title">Web3 Financial Architect | Crypto Trading Specialist | Islamic Finance Researcher</div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <a href="https://wa.me/923227269110" class="contact-link" target="_blank">
-                            <span class="whatsapp-logo">WhatsApp</span> +92 322 7269110
-                        </a>
-                    </div>
-                    <div class="contact-item">
-                        <a href="mailto:muhammad.faisal.advisor@outlook.com" class="contact-link">
-                            ✉️ muhammad.faisal.advisor@outlook.com
-                        </a>
-                    </div>
-                    <div class="contact-item">
-                        <a href="https://www.google.com/maps/place/Sahiwal,+Punjab,+Pakistan" class="contact-link" target="_blank">
-                            <span class="map-logo">Map</span> Sahiwal, Punjab, Pakistan
-                        </a>
-                    </div>
-                    <div class="contact-item">
-                        <a href="https://beacons.ai/muhammad.faisal.advisor" class="contact-link" target="_blank">
-                            🌐 https://beacons.ai/muhammad.faisal.advisor
-                        </a>
-                    </div>
-                </div>
-            </header>
+        <header class="header">
+            <div class="name">👑 MUHAMMAD FAISAL 🏆</div>
+            <div class="title">Islamic Scholar-Orator | Global Ethical Leader | Web3 Financial Architect</div>
+            <div class="contact-info">
+                <div class="contact-item">📞 +92 322 7269110</div>
+                <div class="contact-item">📧 muhammad.faisal.advisor@outlook.com</div>
+                <div class="contact-item">📍 Sahiwal, Punjab, Pakistan</div>
+                <div class="contact-item">🌍 Global Mobility Available</div>
+            </div>
+        </header>
 
-            <!-- Professional Summary -->
-            <section class="section">
-                <h2 class="section-title">Professional Summary</h2>
-                <p>Innovative Web3 Financial Architect and Crypto Trading Specialist with 5+ years of expertise in blockchain-based financial systems and digital asset management. Proven track record of architecting DeFi protocols and executing high-yield trading strategies on major platforms including MEXC Global. Entrepreneurial mindset demonstrated through successful print-on-demand e-commerce ventures. Brings additional 15+ years of diversified experience in multi-sector business management, microfinance, and international operations across Pakistan and Saudi Arabia.</p>
-            </section>
+        <section class="section">
+            <h2 class="section-title">🎯 Scholarly Profile</h2>
+            <div class="profile-quote">
+                "Inspired by The Gate of Knowledge - MAULA ALI (AS), I stand at the intersection of divine wisdom and worldly enterprise. As an Islamic scholar and orator, I bring spiritual integrity to business leadership, transforming commerce into worship and success into service."
+            </div>
+        </section>
 
-            <!-- Core Competencies -->
-            <section class="section">
-                <h2 class="section-title">Core Competencies</h2>
-                <div class="competencies-grid">
-                    <div class="competency-category">
-                        <h3>Web3 & Blockchain</h3>
-                        <ul class="competency-list">
-                            <li>DeFi Protocol Design</li>
-                            <li>Tokenomics & Smart Contracts</li>
-                            <li>Blockchain Architecture</li>
-                            <li>Digital Assets Management</li>
-                        </ul>
-                    </div>
-                    <div class="competency-category">
-                        <h3>Trading & Analysis</h3>
-                        <ul class="competency-list">
-                            <li>Crypto Trading Strategies</li>
-                            <li>Technical Analysis</li>
-                            <li>Risk Management</li>
-                            <li>Portfolio Optimization</li>
-                        </ul>
-                    </div>
-                    <div class="competency-category">
-                        <h3>E-Commerce & Design</h3>
-                        <ul class="competency-list">
-                            <li>Print-on-Demand Business</li>
-                            <li>Digital Design</li>
-                            <li>Passive Income Strategies</li>
-                            <li>Product Marketing</li>
-                        </ul>
-                    </div>
-                    <div class="competency-category">
-                        <h3>Business Management</h3>
-                        <ul class="competency-list">
-                            <li>Strategic Planning</li>
-                            <li>Operations Management</li>
-                            <li>Sales Leadership</li>
-                            <li>International Business</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Professional Experience -->
-            <section class="section">
-                <h2 class="section-title">Professional Experience</h2>
-                
-                <div class="experience-item">
-                    <div class="job-title">Web3 Financial Architect & Crypto Trading Specialist</div>
-                    <div class="duration">2020 - Present</div>
-                    <ul class="achievements">
-                        <li>Designed and developed DeFi protocols serving 5,000+ users with $2M+ TVL</li>
-                        <li>Executed precision trading strategies on MEXC Global, achieving consistent 15-25% monthly returns</li>
-                        <li>Implemented advanced risk management protocols, reducing portfolio drawdown by 40%</li>
-                        <li>Created data-driven trading algorithms that outperformed market benchmarks by 30%</li>
-                        <li>Developed tokenomics models for 3 successful blockchain projects</li>
+        <section class="section">
+            <h2 class="section-title">⭐ Multidimensional Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-category">
+                    <div class="expertise-title">🏛️ Scholarly Leadership</div>
+                    <ul>
+                        <li>Islamic Business Ethics & Philosophy</li>
+                        <li>Spiritual Intelligence Integration</li>
+                        <li>Ethical Decision Making</li>
                     </ul>
                 </div>
-
-                <div class="experience-item">
-                    <div class="job-title">Digital Entrepreneur & Print-on-Demand Store Owner</div>
-                    <div class="duration">2022 - Present</div>
-                    <ul class="achievements">
-                        <li>Established and manage two print-on-demand stores on Zazzle and Spreadshirt</li>
-                        <li>Created 500+ unique designs across various product categories</li>
-                        <li>Developed expertise in digital design, product marketing, and e-commerce optimization</li>
-                        <li>Built sustainable passive income model through creative design and strategic product placement</li>
-                    </ul>
-                    <div class="store-links">
-                        <strong>Store Links:</strong>
-                        <a href="https://www.zazzle.com/store/hussaini_artist" class="store-link" target="_blank">🌐 Zazzle Store - Hussaini Artist</a>
-                        <a href="https://www.spreadshirt.com/shop/user/hussaini+digital+artist" class="store-link" target="_blank">🛍️ Spreadshirt Store - Hussaini Digital Artist</a>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <div class="job-title">Multi-Sector Business Manager</div>
-                    <div class="duration">2005 - 2020</div>
-                    <ul class="achievements">
-                        <li>Managed retail operations across garments, automotive parts, and FMCG sectors</li>
-                        <li>Supervised factory operations in Saudi Arabia, improving production efficiency by 25%</li>
-                        <li>Led cross-functional sales teams of 15+ members, increasing revenue by 35%</li>
-                        <li>Developed and implemented business growth strategies across international markets</li>
+                <div class="expertise-category">
+                    <div class="expertise-title">💻 Digital Entrepreneurship</div>
+                    <ul>
+                        <li>Web3 Financial Architecture</li>
+                        <li>Print-on-Demand Business</li>
+                        <li>E-commerce Development</li>
                     </ul>
                 </div>
-            </section>
-
-            <!-- Education & Certifications -->
-            <section class="section">
-                <h2 class="section-title">Education & Certifications</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Academic Qualifications</h3>
-                        <ul class="competency-list">
-                            <li>Bachelor of Arts (BA) - Bahauddin Zakariya University Multan</li>
-                            <li>Diploma in Business Administration - Punjab Board of Technical Education</li>
-                            <li>Matriculation in Computer Science</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Professional Certifications</h3>
-                        <ul class="competency-list">
-                            <li>Certified Acu-Point Therapist - Tiens Herbal Medicine (August 2012)</li>
-                            <li>Skill Builder Level-I Bancassurance - Jubilee Life Insurance (April 2013)</li>
-                        </ul>
-                    </div>
+                <div class="expertise-category">
+                    <div class="expertise-title">💰 Financial Stewardship</div>
+                    <ul>
+                        <li>Sharia-Compliant Investing</li>
+                        <li>Ethical Portfolio Management</li>
+                        <li>Blockchain Solutions</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Technical Skills -->
-            <section class="section">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Trading Platforms</h3>
-                        <ul class="competency-list">
-                            <li>MEXC Global</li>
-                            <li>TradingView Pro</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>E-Commerce Platforms</h3>
-                        <ul class="competency-list">
-                            <li>Zazzle</li>
-                            <li>Spreadshirt</li>
-                            <li>Print-on-Demand Business</li>
-                        </ul>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Blockchain Tools</h3>
-                        <ul class="competency-list">
-                            <li>DeFi Protocols</li>
-                            <li>Tokenomics Design</li>
-                            <li>Digital Assets</li>
-                        </ul>
-                    </div>
+        <section class="section">
+            <h2 class="section-title">💼 Professional Journey</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">🎤 Islamic Scholar-Orator | Lifetime Commitment</div>
                 </div>
-            </section>
+                <ul>
+                    <li>Certified Spiritual Speaker & Business Ethicist</li>
+                    <li>Islamic Business Philosophy & Ethical Leadership</li>
+                    <li>Inspirational Speeches on Business Ethics</li>
+                </ul>
+            </div>
 
-            <!-- Languages -->
-            <section class="section">
-                <h2 class="section-title">Languages</h2>
-                <div class="languages">
-                    <div class="language-item">
-                        <strong>Urdu:</strong> Native
-                    </div>
-                    <div class="language-item">
-                        <strong>English:</strong> Professional Proficiency
-                    </div>
-                    <div class="language-item">
-                        <strong>Arabic:</strong> Working Knowledge
-                    </div>
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">🧑‍💻 Web3 Financial Architect | 2020-Present</div>
                 </div>
-            </section>
-        </div>
+                <ul>
+                    <li>Industry: Financial Technology</li>
+                    <li>Location: Remote / Global Operations</li>
+                    <li>Sharia-compliant trading strategies</li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.tradingview.com/pricing/?share_your_love=muhammad_faisal_advisor" class="btn">TradingView Pro</a>
+                    <a href="https://www.mexc.com/register?inviteCode=2chfv" class="btn">MEXC Global</a>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">🛒 Digital Store Owner | 2022-Present</div>
+                </div>
+                <ul>
+                    <li>500+ unique digital designs</li>
+                    <li>Ethical passive income streams</li>
+                </ul>
+                <div class="links">
+                    <a href="https://www.zazzle.com/store/hussaini_artist" class="btn">Zazzle Store</a>
+                    <a href="https://www.spreadshirt.com/shop/user/hussaini+digital+artist" class="btn">Spreadshirt Store</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🎓 Education</h2>
+            <div class="education-item">
+                <strong>Bachelor of Arts (BA)</strong> - Bahauddin Zakariya University, Multan
+            </div>
+            <div class="education-item">
+                <strong>Diploma in Business Administration</strong> - Punjab Board of Technical Education
+            </div>
+            <div class="education-item">
+                <strong>Matriculation in Computer Science</strong> - Board of Intermediate & Secondary Education
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">🗣️ Languages</h2>
+            <div class="languages">
+                <div class="language-item">
+                    <strong>🇵🇰 Urdu:</strong> Native
+                </div>
+                <div class="language-item">
+                    <strong>🇬🇧 English:</strong> Professional Proficiency
+                </div>
+                <div class="language-item">
+                    <strong>🇸🇦 Arabic:</strong> Working Knowledge
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">📲 Connect</h2>
+            <div class="links">
+                <a href="tel:+923227269110" class="btn">📞 Call</a>
+                <a href="mailto:muhammad.faisal.advisor@outlook.com" class="btn">📧 Email</a>
+                <a href="https://beacons.ai/muhammad.faisal.advisor" class="btn">🌐 Portfolio</a>
+            </div>
+        </section>
     </div>
 </body>
 </html>
